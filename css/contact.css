@@ -19,7 +19,7 @@ min-height: 100vh;
 
 .mod{
   text-decoration: none;
-  color: #000;
+  color: rgb(169, 0, 0);
  font-size: 20px;
 }
 
@@ -35,7 +35,7 @@ h2{
   font-family: 'Times New Roman', Times, serif;
 }
 .cart{
- color: black;
+  color: rgb(169, 0, 0);
  font-size: 20px;
  padding: 5px;
  border-radius: 4;

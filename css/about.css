@@ -1,9 +1,9 @@
-*{
+/* *{
   margin: 0;
   padding: 0;
   box-sizing:border-box ;
   font-size: large;
-}
+} */
 
 body{
 font-family: 'Times New Roman', Times, serif;   
@@ -20,7 +20,7 @@ min-height: 100vh;
 
 .mod{
   text-decoration: none;
-  color: #000;
+  color: rgb(169, 0, 0);
  font-size: 20px;
 }
 
@@ -36,7 +36,7 @@ h2{
   font-family: 'Times New Roman', Times, serif;
 }
 .cart{
- color: black;
+ color: rgb(169, 0, 0);
  font-size: 20px;
  padding: 5px;
  border-radius: 4;
