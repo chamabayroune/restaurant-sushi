@@ -1,13 +1,9 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box ;
-} */
-body{
-  font-family: 'Times New Roman', Times, serif;   
-  
+body {
+  font-family: 'Times New Roman', Times, serif;
+
 }
-.conu{
+
+.conu {
   background-image: url("../asset/home/homo.jpg") !important;
   background-position: center;
   background-size: cover;
@@ -15,13 +11,14 @@ body{
   min-height: 100vh;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    color:rgb(169, 0, 0);
-    padding: 25px 60px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(169, 0, 0);
+  padding: 25px 60px;
 }
-#hitaka{
+
+#hitaka {
   color: rgb(169, 0, 0);
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
@@ -29,59 +26,148 @@ body{
   margin-top: 0;
 }
 
-.cart{
+.cart {
   color: rgb(169, 0, 0);
-   
-   padding: 5px;
-   border-radius: 4;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 4;
+  top: 0em;
+  right: 0em;
 }
 
-.menunav{
+.menunav {
   display: flex;
   gap: 5rem;
 }
-
-.mod{
+.titlo{
+color: rgb(169, 0, 0);
+font-size: 30px;
+font-family: 'Times New Roman', Times, serif;
+margin: auto;
+text-align: center;
+margin-left: 1px;
+}
+.mod {
   text-decoration: none;
   color: rgb(169, 0, 0);
- font-size: 20px;
+  font-size: 20px;
 }
 
-.bnt{
+
+.bnt {
   display: inline-block;
   padding: 10px;
   background-color: #fffaeb;
   border-radius: 5px;
   margin: 10px;
-  
   box-shadow: #E5D9B6 0px 3px 6px;
-  color:#E5D9B6;
+  color: #E5D9B6;
   cursor: pointer;
   text-decoration: none;
 }
 
-.catego{
+.catego {
   display: grid;
   justify-content: center;
+  
   align-items: center;
 }
 
-.shop{
-width: 100%;
-margin: auto;
-display: grid;
-grid-template-columns: repeat(4,1fr);
-gap: 20px;
-justify-content: center;
-align-items: center;
-margin-top: 70px;
+.shop {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
 }
-.dtails , .price{
+
+.dtails,.price {
   display: block;
   text-align: center;
 }
 
-.footer{
+.footer {
   margin-top: 6%;
-    text-align:center;
+  text-align: center;
+}
+
+@media (max-width:700px) {
+
+  #hitaka {
+    position: fixed;
+    text-align: center;
+    margin-left: 100px;
   }
+
+  .cart {
+    position: fixed;
+    top: 35px;
+    right: 0.5cm;
+  }
+
+  .menunav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: wheat;
+    flex: basis 40px;
+    
+  }
+
+  .menunav.opned {
+    left: 250px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .titlo{
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 3em; 
+  }
+
+  .shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -2px;
+  }
+  
+
+  .catego {
+    margin-top: 100px;
+  }
+
+  .emo {
+    max-width: 25em;
+    min-height: 25em;
+  }
+
+  #imo {
+    max-width: 30em;
+    min-height: 31em;
+  }
+
+  #migo {
+    max-width: 34em;
+    min-height: 34em;
+  }
+
+  .dtails{
+    margin-block-start: 2em;
+  }
+
+  .footer {
+    margin-top: 13%;
+  }
+}

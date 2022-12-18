@@ -5,164 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/card.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>hikata sushiso</title>
     <style>
-      @font-face {
-        font-family: "Shopper";
-        src: url("http://www.shopperfont.com/font/Shopper-Std.ttf");
-      }
 
-      .shopper {
-        text-transform: lowercase;
-        font: 2em "Shopper", sans-serif;
-        line-height: 0.5em;
-        display: inline-block;
-      }
-      .prodct{
-        max-height: 400px;
-        overflow-y: auto;
-      }
-
-      input {
-        border: 0.3em solid #bbc3c6;
-        padding: 0.5em 0.3em;
-        font-size: 1.4em;
-        color: #8a8a8a;
-        text-align: center;
-      }
-
-      img {
-        max-width: 9em;
-        width: 100%;
-        overflow: hidden;
-        margin-right: 1em;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      .container1 {
-        max-width: 75em;
-        width: 95%;
-        margin: 40px auto;
-        overflow: hidden;
-        position: relative;
-
-        border-radius: 0.6em;
-        background: #000000;
-        box-shadow: 0 0.5em 0 rgba(138, 148, 152, 0.2);
-      }
-
-      .heading1 {
-        display: flex;
-        justify-content: space-between;
-        padding: 1em;
-        position: relative;
-        z-index: 1;
-        color: #f7f7f7;
-        background: #d3ad7f;
-      }
-
-      .cart {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 2.5em;
-        overflow: hidden;
-      }
-
-      .cart.is-closed {
-        height: 0;
-        margin-top: -2.5em;
-      }
-
-      .tf {
-        background: #d3ad7f;
-        text-transform: uppercase;
-        text-align: right;
-        font-size: 1.2em;
-      }
-
-      .col {
-        padding: 1em;
-        width: 12%;
-      }
-
-      .col-pro {
-        width: 80%;
-      }
-
-      .row > div {
-        vertical-align: middle;
-      }
-      .visibility-cart {
-        position: absolute;
-        color: #fff;
-        top: 0.5em;
-        right: 0.5em;
-        background: black;
-        font: bold 2em arial;
-        border: 0.16em solid #fff;
-        border-radius: 2.5em;
-        padding: 0 0.22em 0 0.25em;
-      }
-      #myOverlay {
-        display: block;
-        padding: 25%;
-        height: 20em;
-        margin-top: -21%;
-      }
-      #part1 {
-        display: flex;
-        justify-content: space-around;
-      }
-      #part3 {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 5%;
-      }
-      .heads {
-        padding: 1em;
-        position: relative;
-        z-index: 1;
-        background: #ffffff;
-        margin-top: 5%;
-
-      }
-      #part4 {
-        margin-top: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      #prod {
-        display: flex;
-        justify-content: space-around;
-      }
-      .prod{
-        display: flex;
-        justify-content: space-around;
-        max-height: 400px;
-      }
-      
-      @media screen and (max-width: 755px) {
-        .container {
-          width: 98%;
-        }
-
-        .col-pro {
-          width: 35%;
-        }
-
-        .col-qty {
-          width: 22%;
-        }
-      }
     </style>
   </head>
   <body class="conu">
@@ -182,7 +32,7 @@
               border: none;
               color: rgb(169, 0, 0);
               font-size: 20px;
-            "
+            ";
             onclick="document.getElementById('myOverlay').style.display = 'block'"
           >
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -192,9 +42,10 @@
     </header>
 
     <main>
+       <H3 class="titlo">menu</H3>
       <div class="shop" id="shop">
         <div class="catego">
-          <img width="150" height="150" src="./asset/menu/M1.jpg" alt="" />
+          <img width="150" height="150" src="./asset/menu/M1.jpg" alt="" class="emo" />
           <div class="dtails">
             <h3>tkoso</h3>
             <div class="price">
@@ -213,7 +64,7 @@
         </div>
 
         <div class="catego">
-          <img width="150" height="150" src="./asset/menu/test.jpg" alt="" />
+          <img width="150" height="150" src="./asset/menu/test.jpg" alt="" class="emo" />
           <div class="dtails">
             <h3>tkoso</h3>
             <div class="price">
@@ -232,7 +83,7 @@
         </div>
 
         <div class="catego">
-          <img width="150" height="150" src="./asset/menu/M3.jpg" alt="" />
+          <img width="150" height="150" src="./asset/menu/M3.jpg" alt="" class="emo" id="imo" />
           <div class="dtails">
             <h3>hikata</h3>
             <div class="price">
@@ -251,7 +102,7 @@
         </div>
 
         <div class="catego">
-          <img width="150" height="150" src="./asset/menu/M4.jpg" alt="" />
+          <img width="150" height="150" src="./asset/menu/M4.jpg" alt="" class="emo" />
           <div class="dtails">
             <h3>Sushiso</h3>
             <div class="price">
@@ -270,7 +121,7 @@
         </div>
 
         <div class="catego">
-          <img width="150" height="150" src="./asset/menu/M5.jpg" alt="" />
+          <img width="150" height="150" src="./asset/menu/M5.jpg" alt="" class="emo" id="imo" />
           <div class="dtails">
             <h3>Sushiso</h3>
             <div class="price">
@@ -289,7 +140,7 @@
         </div>
 
         <div class="catego">
-          <img width="150" height="150" src="./asset/menu/M6.jpg" alt="" />
+          <img width="150" height="150" src="./asset/menu/M6.jpg" alt="" class="emo" id="migo"/>
           <div class="dtails">
             <h3>Sushiso</h3>
             <div class="price">
@@ -307,7 +158,7 @@
         </div>
 
         <div class="catego">
-          <img width="150" height="150" src="./asset/menu/M2.jpg" alt="" />
+          <img width="150" height="150" src="./asset/menu/M2.jpg" alt="" class="emo"  id="imo" />
           <div class="dtails">
             <h3>Sushiso</h3>
             <div class="price">
@@ -326,7 +177,7 @@
         </div>
 
         <div class="catego">
-          <img width="150" height="150" src="./asset/menu/last.jpg" alt="" />
+          <img width="150" height="150" src="./asset/menu/last.jpg" alt="" class="emo" />
           <div class="dtails">
             <h3>Sushiso</h3>
             <div class="price">
@@ -383,13 +234,11 @@
         <p>copycopy created by chaicha:)</p>
       </div>
     </footer>
-    <!-- <script src="../main.js" type="module"></script> -->
     <script>
+    var Total = 0;
       function addPlat(prix, name) {
         var product = document.getElementsByClassName("prodct")[0];
         var price = document.getElementsByClassName("pricee")[0];
-        console.log(product);
-        console.log("fadwa");
         product.innerHTML += ` 
         <div id="part4" class="heads">
               <span class="prod">
@@ -399,7 +248,7 @@
             </div>`;
         Total += prix;
         price.innerHTML = Total + "$";
-      }
-    </script>
+      }</script> 
+
   </body>
 </html>

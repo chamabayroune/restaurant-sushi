@@ -44,8 +44,18 @@ h2{
 .menunav{
 
 display: flex;
-gap: 1rem;
+gap: 4rem;
 }
+
+#tio{
+  color: rgb(169, 0, 0);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: auto;
+  text-align: center;
+  margin-left: 1px;
+  margin-top: 2em;
+  }
 
 .bnt{
 padding: 10px;
@@ -78,4 +88,55 @@ label ,input{
 
 .footer{
 text-align:center;
+}
+
+@media (max-width:700px) {
+
+  #hitaka {
+    position: fixed;
+    text-align: center;
+    margin-left: 90px;
+  }
+
+  .cart {
+    position: fixed;
+    top: 1;
+    right: 0.5cm;
+  }
+
+  .menunav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: wheat;
+    flex: basis 40px;
+  }
+
+  .menunav.opned {
+    left: 250px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .tio{
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 3em;
+    margin-bottom: -3em; 
+  }
+
+.form{
+  margin-bottom: 8em;
+  margin-top: 6em;
+}
+  .footer {
+    margin-top: 13%;
+  }
 }
