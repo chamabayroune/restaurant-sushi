@@ -114,6 +114,7 @@ body {
   .navbar {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(224 224 224);
   }
 
   .t {

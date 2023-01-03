@@ -5,18 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/menu.css" />
-    <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="./css/card.css" />
+
+    
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>hikata sushiso</title>
-    <style>
 
-    </style>
   </head>
   <body class="conu">
     <header>
+      <div class="cartZ">
+          <button
+            style="
+              background: none;
+              border: none;
+              color: rgb(199, 208, 161);
+              font-size: 59px;
+
+            ";
+            onclick="document.getElementsByClassName('menunav').style.display = 'flex'"
+          >
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </button>
+          
+        </div>
       <div class="navbar">
         <h2 id="hitaka">Hikata sushiso</h2>
         <div class="menunav">
@@ -25,26 +41,51 @@
           <a href="about.html" class="mod">about</a>
           <a href="contact.html" class="mod">contact</a>
         </div>
-        <div class="cart">
+        
+        <div class="cart1">
           <button
             style="
               background: none;
               border: none;
               color: rgb(169, 0, 0);
-              font-size: 20px;
+              font-size: 2em;
+
             ";
             onclick="document.getElementById('myOverlay').style.display = 'block'"
           >
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
           </button>
+          
         </div>
+        
       </div>
     </header>
 
     <main>
-       <H3 class="titlo">menu</H3>
+      <H3 class="titlo">menu</H3>
+
+      <div style="display: flex; justify-content: space-around;">
+
+        <div class="buto" onclick="sushi()">
+          <a style="    width: 10em;    text-align: center;       color: black; "class="bnt">SUSHI</a>
+        </div>
+        <div class="buto" onclick="tkoso()">
+          <a
+         style="    width: 10em;   text-align: center;       color: black;     "
+            class="bnt"
+            >TKOSO</a
+          >
+        </div>
+        <div class="buto" onclick="ramen()">
+          <a
+       style="    width: 10em;   text-align: center;       color: black;     "
+            class="bnt"
+            >RAMEN</a
+          >
+        </div>
+      </div>
       <div class="shop" id="shop">
-        <div class="catego">
+        <div class="catego" id="tkoso">
           <img width="150" height="150" src="./asset/menu/M1.jpg" alt="" class="emo" />
           <div class="dtails">
             <h3>tkoso</h3>
@@ -63,7 +104,7 @@
           </div>
         </div>
 
-        <div class="catego">
+        <div class="catego" id="tkoso">
           <img width="150" height="150" src="./asset/menu/test.jpg" alt="" class="emo" />
           <div class="dtails">
             <h3>tkoso</h3>
@@ -82,7 +123,7 @@
           </div>
         </div>
 
-        <div class="catego">
+        <div class="catego" id="sushi">
           <img width="150" height="150" src="./asset/menu/M3.jpg" alt="" class="emo" id="imo" />
           <div class="dtails">
             <h3>hikata</h3>
@@ -101,7 +142,7 @@
           </div>
         </div>
 
-        <div class="catego">
+        <div class="catego" id="sushi">
           <img width="150" height="150" src="./asset/menu/M4.jpg" alt="" class="emo" />
           <div class="dtails">
             <h3>Sushiso</h3>
@@ -120,7 +161,7 @@
           </div>
         </div>
 
-        <div class="catego">
+        <div class="catego" id="sushi">
           <img width="150" height="150" src="./asset/menu/M5.jpg" alt="" class="emo" id="imo" />
           <div class="dtails">
             <h3>Sushiso</h3>
@@ -139,7 +180,7 @@
           </div>
         </div>
 
-        <div class="catego">
+        <div class="catego" id="sushi">
           <img width="150" height="150" src="./asset/menu/M6.jpg" alt="" class="emo" id="migo"/>
           <div class="dtails">
             <h3>Sushiso</h3>
@@ -157,7 +198,7 @@
           </div>
         </div>
 
-        <div class="catego">
+        <div class="catego" id="sushi">
           <img width="150" height="150" src="./asset/menu/M2.jpg" alt="" class="emo"  id="imo" />
           <div class="dtails">
             <h3>Sushiso</h3>
@@ -176,7 +217,7 @@
           </div>
         </div>
 
-        <div class="catego">
+        <div class="catego" id="sushi">
           <img width="150" height="150" src="./asset/menu/last.jpg" alt="" class="emo" />
           <div class="dtails">
             <h3>Sushiso</h3>
@@ -221,6 +262,7 @@
             <h3 id="h1" class="pricee">0$</h3>
           </div>
         </div>
+
       </div>
     </main>
     <footer>
@@ -236,6 +278,7 @@
     </footer>
     <script>
     var Total = 0;
+    // PRICE AND NAME IS A PARAMETERS OF THIS FUNCTION
       function addPlat(prix, name) {
         var product = document.getElementsByClassName("prodct")[0];
         var price = document.getElementsByClassName("pricee")[0];
@@ -249,6 +292,17 @@
         Total += prix;
         price.innerHTML = Total + "$";
       }</script> 
+      <script>
+          function sushi(){
+          document.getElementById("tkoso").style.display ="none";
+          document.getElementById("ramen").style.display ="none";}
+          function tkoso(){
+          document.getElementById("sushi").style.display ="none";  
+          document.getElementById("ramen").style.display ="none";}
+          function ramen(){
+          document.getElementById("sushi").style.display ="none";  
+          document.getElementById("tkoso").style.display ="none";}
+      </script>
 
   </body>
 </html>

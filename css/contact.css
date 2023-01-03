@@ -67,24 +67,42 @@ color:#E5D9B6;
 cursor: pointer;
 text-decoration: none;
 }
-.form , .mapouter {
-  display: bloc;
-  margin-top: 50px;
-  text-align: center;
-}
 
-label ,input{
-  padding: 10px 20px;
-  margin-top: 30px;
- border-radius: 10px;
+.form ,.mapouter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 20px;
+  text-align: center;
+  width: 45%;
 }
- 
-.mapouter{
-  width: 100vw;
+.submit{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
 }
+.input_section{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.input_section input{
+  padding: 10px 20px;
+ border: 1px solid black;
+ border-radius: 10px;
+}
+.input_section label{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  margin-left: 10px;
+}
+
 
 .footer{
 text-align:center;
@@ -115,6 +133,7 @@ text-align:center;
     align-items: center;
     border: wheat;
     flex: basis 40px;
+    background-color: aliceblue;
   }
 
   .menunav.opned {
@@ -124,7 +143,9 @@ text-align:center;
   .navbar {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(224 224 224);
   }
+
   .tio{
     text-align: center;
     margin-left: 10px;
@@ -139,4 +160,18 @@ text-align:center;
   .footer {
     margin-top: 13%;
   }
+}
+
+
+
+
+
+
+
+
+.contact_body{
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  
 }

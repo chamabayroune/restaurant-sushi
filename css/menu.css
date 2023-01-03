@@ -2,6 +2,9 @@ body {
   font-family: 'Times New Roman', Times, serif;
 
 }
+.cartZ{
+  display: none;
+}
 
 .conu {
   background-image: url("../asset/home/homo.jpg") !important;
@@ -26,9 +29,8 @@ body {
   margin-top: 0;
 }
 
-.cart {
+.cart1 {
   color: rgb(169, 0, 0);
-  font-size: 20px;
   padding: 5px;
   border-radius: 4;
   top: 0em;
@@ -37,7 +39,9 @@ body {
 
 .menunav {
   display: flex;
+  flex-direction: row;
   gap: 5rem;
+  
 }
 .titlo{
 color: rgb(169, 0, 0);
@@ -67,9 +71,8 @@ margin-left: 1px;
 }
 
 .catego {
-  display: grid;
+  display: flex;
   justify-content: center;
-  
   align-items: center;
 }
 
@@ -102,25 +105,22 @@ margin-left: 1px;
     margin-left: 100px;
   }
 
-  .cart {
-    position: fixed;
-    top: 35px;
-    right: 0.5cm;
-  }
+ 
 
   .menunav {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 30vh;
+    display: flex;
+    /* gap: 5rem; */
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: wheat;
-    flex: basis 40px;
+    margin-top: 36%;
+    margin-left: auto;
+    /* font-size: 40px; */
     
-  }
+}
+.mod {
+  text-decoration: none;
+  color: rgb(169, 0, 0);
+  font-size: 46px;
+}
 
   .menunav.opned {
     left: 250px;
@@ -129,6 +129,7 @@ margin-left: 1px;
   .navbar {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(224 224 224);
   }
   .titlo{
     text-align: center;
@@ -169,5 +170,28 @@ margin-left: 1px;
 
   .footer {
     margin-top: 13%;
+    margin-left: 57%;
+
+  }
+  #myOverlay {
+  display: block;
+  position: absolute;
+  top: 22%;
+
+}
+  main{
+    width: 157%;
+  }
+  .cart1 {
+    margin-right: -100%;}
+  .menunav {
+      display: none;
+      gap: 5rem;
+      margin-left: 51%;
+  }
+  .cartZ{
+    position: absolute;
+    top: 7%;
+    display: block;
   }
 }

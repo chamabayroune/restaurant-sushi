@@ -94,12 +94,27 @@ text-decoration: none;
 .chefo{
   display: flex;
   flex-direction: column;
+  width: 100vw;
   justify-content: center;
   align-items: center;
-  margin: 4rem;
+  margin-top: -2em;
+  margin-bottom: 15px;
+  
 }
-#tito{
-  color: rgb(169, 0, 0);
+.body_chef{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+
+}
+#titl{
+ color: rgb(169, 0, 0);
+
+}
+
+.PARA{
+  margin-bottom: 2em;
 }
 .footer{
 text-align:center;
@@ -139,6 +154,7 @@ text-align:center;
   .navbar {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(224 224 224);
   }
   .tilo{
     text-align: center;

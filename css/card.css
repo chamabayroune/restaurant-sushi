@@ -24,15 +24,11 @@ font-family: 'Times New Roman', Times, serif;
  border-radius: 4;
 }
 
-.menunav{
-display: flex;
-gap: 5rem;
-}
+
 
 .mod{
   text-decoration: none;
   color: rgb(169, 0, 0);
- font-size: 20px;
 }
 
 .cart-box{
