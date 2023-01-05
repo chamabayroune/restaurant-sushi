@@ -25,6 +25,7 @@
               border: none;
               color: rgb(199, 208, 161);
               font-size: 59px;
+              cursor: pointer;
 
             ";
             onclick="document.getElementsByClassName('menunav').style.display = 'flex'"
@@ -48,7 +49,7 @@
               background: none;
               border: none;
               color: rgb(169, 0, 0);
-              font-size: 2em;
+              font-size: 1.5rem;
 
             ";
             onclick="document.getElementById('myOverlay').style.display = 'block'"
@@ -80,11 +81,11 @@
           <a
        style="    width: 10em;   text-align: center;       color: black;     "
             class="bnt"
-            >RAMEN</a
-          >
+            >RAMEN</a>
         </div>
       </div>
-      <div class="shop" id="shop">
+      <div style="display: flex;flex-direction: row;">
+      <div class="shop" id="shop" >
         <div class="catego" id="tkoso">
           <img width="150" height="150" src="./asset/menu/M1.jpg" alt="" class="emo" />
           <div class="dtails">
@@ -236,12 +237,13 @@
           </div>
         </div>
       </div>
+    
       <div class="container" id="myOverlay">
         <div class="heading1">
           <h1 id="h1"><span class="shopper">s</span> Shopping Cart</h1>
 
           <button
-            style="background: none"
+            style="background: none; "
             onclick="document.getElementById('myOverlay').style.display = 'none'"
             class="visibility-cart transition is-open"
           >
@@ -264,6 +266,7 @@
         </div>
 
       </div>
+    </div>
     </main>
     <footer>
       <div class="footer">

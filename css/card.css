@@ -113,7 +113,7 @@ font-family: 'Times New Roman', Times, serif;
     position: relative;
     z-index: 1;
     color: #f7f7f7;
-    background: #d3ad7f;
+    background: rgb(169, 0, 0);
   }
 
   .cart {
@@ -148,10 +148,8 @@ font-family: 'Times New Roman', Times, serif;
     vertical-align: middle;
   }
   .visibility-cart {
-    position: absolute;
+    height: 1.5em;
     color: #fff;
-    top: 0.5em;
-    right: 0.5em;
     background: black;
     font: bold 2em arial;
     border: 0.16em solid #fff;
@@ -160,9 +158,9 @@ font-family: 'Times New Roman', Times, serif;
   }
   #myOverlay {
     display: none;
-    padding: 25%;
-    height: 20em;
-    margin-top: -21%;
+    position: absolute;
+    top: 12%;
+    right: 0;
   }
   #part1 {
     display: flex;
